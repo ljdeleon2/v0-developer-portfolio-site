@@ -150,7 +150,7 @@ export default function HeroSection() {
         }`}
       >
         <div className="relative flex items-center justify-center min-h-screen">
-          <div className="absolute left-2 top-1/2 -translate-y-1/2 w-[280px] h-[280px] flex items-center justify-center">
+          <div className="absolute top-20 left-1/2 -translate-x-1/2 md:top-24 lg:left-2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0 w-[200px] h-[200px] md:w-[240px] md:h-[240px] lg:w-[280px] lg:h-[280px] flex items-center justify-center">
             <div className="relative w-full h-full">
               <div className="absolute inset-0 border-4 border-white/20 rounded-full shadow-[0_0_30px_rgba(255,255,255,0.3)] backdrop-blur-sm" />
               <Image
@@ -163,10 +163,10 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col items-center justify-center text-center pl-[42%] pr-8 pb-24 pt-24">
+          <div className="w-full flex flex-col items-center justify-center text-center pt-[280px] md:pt-[320px] lg:pl-[42%] lg:pr-8 lg:pb-24 lg:pt-24">
             <h1
               ref={typedRef}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance min-h-[3.5rem] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance min-h-[3.5rem] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] lg:whitespace-nowrap"
             />
             <p className="text-base md:text-lg mb-8 max-w-2xl text-pretty text-white bg-black/40 backdrop-blur-sm px-6 py-4 rounded-lg">
               Building innovative web solutions with modern technologies. Passionate about creating seamless user
