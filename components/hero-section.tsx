@@ -166,7 +166,7 @@ export default function HeroSection() {
           <div className="w-full flex flex-col items-center justify-center text-center pt-[280px] md:pt-[320px] lg:pl-[42%] lg:pr-8 lg:pb-24 lg:pt-24">
             <h1
               ref={typedRef}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance min-h-[3.5rem] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] lg:whitespace-nowrap"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance min-h-[3.5rem] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
             />
             <p className="text-base md:text-lg mb-8 max-w-2xl text-pretty text-white bg-black/40 backdrop-blur-sm px-6 py-4 rounded-lg">
               Building innovative web solutions with modern technologies. Passionate about creating seamless user
