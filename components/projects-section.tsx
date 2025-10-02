@@ -12,22 +12,27 @@ export default function ProjectsSection() {
 
   const featuredProjects = [
     {
-      title: "La Chapina De Chicago",
-      description:
-        "Built a responsive e-commerce website for a family business with 100+ product listings. Designed a modern UI inspired by leading retail brands (Gymshark, Uniqlo, Off-White) with focus on scalability, accessibility, and mobile-first design.",
-      techStack: ["HTML", "CSS", "JavaScript", "GoDaddy", "SSL"],
+      title: "La Chapina De Chicago – E-Commerce Site",
+      description: [
+        "Built a responsive e-commerce website for a family business with 100+ product listings.",
+        "Designed a modern UI inspired by leading retail brands (Gymshark, Uniqlo, Off-White) with focus on scalability, accessibility, and mobile-first design.",
+        "Integrated Stripe Checkout for secure online transactions and a seamless payment flow.",
+      ],
+      techStack: ["HTML", "CSS", "JavaScript", "GoDaddy", "Stripe", "SSL"],
       github: "https://github.com/ljdeleon2/v0-chapina",
       demo: "https://v0-guatemalan-online-store.vercel.app",
       date: "March 2025 - Present",
     },
     {
-      title: "Fantasy Football Draft Website",
-      description:
-        "Developed a web app to manage fantasy football rosters with a FIFA-inspired card layout. Features include visualization of 11+ player roster positions, projected weekly scores, and opponent matchups. Delivered live demo to 50+ attendees during IIT Innovation Day.",
-      techStack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      github: "https://github.com/ljdeleon2/Fantasy-Fever-App",
-      demo: "https://ljdeleon2.github.io/Fantasy-Fever-App",
-      date: "November 2024 - Present",
+      title: "Fantasy Fever – NFL Fantasy Web App",
+      description: [
+        "Built a fantasy football web app prototype with roster management, draft lobby simulation, player stats, matchups, and league standings, designed to improve NFL Fantasy's user engagement.",
+        "Deployed on Vercel using Next.js, Tailwind CSS, and JavaScript, pitched as a platform upgrade concept to rival Yahoo/ESPN fantasy apps.",
+      ],
+      techStack: ["Next.js", "Tailwind CSS", "JavaScript", "Responsive Design", "Git", "Vercel Deployment"],
+      github: "https://github.com/ljdeleon2/nfl-fantasy-app",
+      demo: "https://fantasy-fever.vercel.app",
+      date: "November 2024 - October 2025",
     },
   ]
 
@@ -182,7 +187,14 @@ export default function ProjectsSection() {
                   <CardHeader>
                     <CardTitle className="text-2xl">{project.title}</CardTitle>
                     <p className="text-sm text-muted-foreground">{project.date}</p>
-                    <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
+                    <div className="space-y-2 mt-3">
+                      {project.description.map((bullet, bulletIndex) => (
+                        <p key={bulletIndex} className="text-base leading-relaxed text-muted-foreground flex gap-2">
+                          <span className="text-white/60 flex-shrink-0">•</span>
+                          <span>{bullet}</span>
+                        </p>
+                      ))}
+                    </div>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <div className="flex flex-wrap gap-2">
